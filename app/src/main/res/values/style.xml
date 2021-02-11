@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MaterialOutLineButtonsStyle" parent="Widget.MaterialComponents.Button.OutlinedButton.Icon">
+        <item name="android:backgroundTint">@android:color/white</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="iconPadding">@dimen/space_thin</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconTintMode">multiply</item>
+    </style>
+</resources>

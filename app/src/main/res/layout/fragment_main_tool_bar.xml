@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_main_tool_bar_root_constraint"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize">
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/fragment_main_tool_bar_search_searchView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/space_small"
+        android:layout_marginVertical="@dimen/space_thin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintCircleRadius="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/fragment_main_tool_bar_filter_materialButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/fragment_main_tool_bar_filter_materialButton"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/space_medium"
+        app:icon="@drawable/ic_baseline_filter_list_24"
+        app:iconGravity="textStart"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment_main_tool_bar_search_searchView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fragment_main_tool_bar_search_searchView"
+        app:strokeWidth="0dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
